@@ -112,8 +112,7 @@ select {
 [type=reset],
 [type=submit],
 button {
-    -webkit-appearance: button;
-    appearance: button;
+    -webkit-appearance: button
 }
 
 [type=button]::-moz-focus-inner,
@@ -165,7 +164,6 @@ textarea {
 
 [type=search] {
     -webkit-appearance: textfield;
-    appearance: textfield;
     outline-offset: -2px
 }
 
@@ -193,6 +191,7 @@ template {
 [hidden] {
     display: none
 }
+
 
 /* Variables
   ============================= */
@@ -365,7 +364,7 @@ a:active {
     white-space: nowrap;
 }
 
-.main img {
+main img {
     max-width: 100%;
     height: auto;
 }
@@ -482,7 +481,6 @@ ul.row {
     .navbar-menu {
         display: none;
     }
-
 }
 
 /* Header
@@ -1008,7 +1006,7 @@ textarea:focus {
 /* Form error handling
       ============================= */
 
-input:not(:placeholder-shown)~.form-field-icon::after {
+input:required:invalid:not(:focus):not(:placeholder-shown)~.form-field-icon::after {
     height: 100%;
     right: 0;
     pointer-events: none;
